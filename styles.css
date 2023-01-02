@@ -1,31 +1,31 @@
 
 body {
+    display:flex;
+    flex-direction: column;
     margin:0px;
     font-family:Tahoma, sans-serif;
 }
 
-.header
- {
-    background-color: #1F2937;
-}
-
-section {
+header {
     padding:0 150px;
 }
-.logo {
-    width:150px;
-}
- 
+
 h1 {
     font-size: 48px;
     font-weight: bolder;
     color:#F9FAF8;
 }
 
-.description{
-   font-size: 18px;
-   color:#E5E7EB;
-   padding-bottom:25px;
+h2 {
+    font-size:22px;
+    text-align: center;
+    margin: 50px 0;
+}
+ul {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
 }
 
 li {
@@ -33,47 +33,96 @@ li {
     display:inline;
     padding:0px 35px;
     font-size:18px;
+    margin-bottom: 15px;
 }
 
 a {
     text-decoration: none;
     color:#E5E7EB;
-
 }
+
 button {
     color:#E5E7EB;
     background-color: #3882F6;
     padding:8px 20px;
+    margin-bottom: 35px;
     border-radius:5px;
     border:none;
     text-align: center;
     font-size : 16px;
-    
+
 }
 
-.flex_header {
+figcaption {
+    margin-top:25px;
+    max-width:200px;
+    padding:5px;
+    font-style:italic;
+}
+
+.first_section {
+    background-color: #1F2937;
+}
+
+.logo {
+    max-width:150px;
+    margin-bottom: 50px;
+    
+}
+ 
+.flex_nav {
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 15px;
-    margin-bottom:120px;
-}
-
-ul {
-    display:flex;
-    align-items: center;
-}
-
-.sun {
-    display:flex;
-    padding-bottom:90px;
+    margin-bottom:80px;
     
 }
 
-.sun div {
-    width:50%;
+.description {
+    font-size: 18px;
+    color:#E5E7EB;
+    padding-bottom:25px;
+    max-width:400px;
+ } 
+
+ .header_text {
+    display:flex;
+    flex-wrap: wrap;
+    padding-bottom:90px;
+}
+
+.header_text div {
+    max-width:440px;
     padding:0px 25px;
 }
 
 .picture {
-    width:100%;
+    max-width:100%;
+}
+
+.flex_offer {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+
+}
+
+.offer {
+    margin: 0 auto;
+    max-width:150px;
+    box-shadow: 5px 5px 20px 5px #1F2937;
+    
+}
+
+figure {
+    display:flex;
+    flex-direction: column;
+}   
+
+
+.second_section {
+    margin-bottom:85px;
 }
