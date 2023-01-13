@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> A Trip to the Sun Survey</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title"> Help us improve our service </h1>
+        <p id="description"> Please let us know what you think of our current offer and any suggestions you may have for improvements.</p>
+        <form id="survey-form" method="post" action='#'>
+            <fieldset>
+                <label id="name-label" for="name"> Name <input type="text" id="name" name="name" placeholder="Enter your name" required></label> 
+                <label id="email-label" for="email"> Email <input type="email" id="email" name="email" placeholder="Enter your email" required></label> 
+                <label id="number-label" for="number"> Age (optional) <input type="number" id="number" name="number" min="13" max="120" placeholder="Age"></label> 
+                <label for="dropdown"> How do know about us
+                <select id="dropdown" name="dropdown"> 
+                    <option value="">Select option</option>
+                    <option value="friend-relative">Friend/relative</option>
+                    <option value="television">Television advertisements</option>
+                    <option value="brochures-leafllets">Brochures/leaflets</option>
+                    <option value="internet">Internet</option>
+                    <option value="newspaper">Newspaper</option>
+                    <option value="other">Other </option>
+                </select></label>
+            </fieldset>
+            <fieldset>
+                <span> How often do you book your travels with us? </span>
+                <label for="first-book"> <input class="inline" id="first-book" type="radio" name="booking-frequency" value="first-book" checked > This is my first booking </label>
+                <label for="rarely"> <input class="inline" id="rarely" type="radio" name="booking-frequency" value="rarely" >  Rarely </label>
+                <label for="occasionally"> <input class="inline" id="occasionally" type="radio" name="booking-frequency" value="occasionally"> Occasionally </label>
+                <label for="often"> <input class="inline" id="often" type="radio" name="booking-frequency" value="often"> Often</label>
+            </fieldset>  
+            <fieldset>
+                <span> Which mode of travel did you choose? </span>
+                <label for="transport-select">
+                <select id="transport-select" name="transport-select">
+                    <option value="">Select option</option>
+                    <option value="bus-coach">Bus or Coach service</option>
+                    <option value="airplane">Air travel</option>
+                    <option value="personal-transport">Personal transportation (Car etc.)</option>
+                </select>
+            </fieldset>  
+            <fieldset>
+                <span> What would you like to see improved? (Check all that apply)</span>
+                <label for="customer-service"><input type="checkbox" id="customer-sevice" name="customer-service" value="customer-service"> Customer service </label>
+                <label for="transport-service"><input type="checkbox" id="transport-service" name="transport-service" value="transport-service"> Transport service </label>
+                <label for="payment-process"><input type="checkbox" id="payment-process" name="payment-process" value="payment-process"> Payment process </label>
+                <label for="insurance"><input type="checkbox" id="insurance" name="insurance" value="insurance-medical-support"> Insurance offer/medical support </label>
+                <label for="hotel-services"><input type="checkbox" id="hotel-services" name="hotel-services" value="hotel-services"> Hotel services </label>
+                <label for="contact"><input type="checkbox" id="contact" name="contact" value="contact-coordinators"> Contact with the agency coordinators </label>
+                <label for="punctuality-accuracy"><input type="checkbox" id="punctuality-accuracy" name="punctuality-accuracy" value="punctuality-accuracy"> Punctuality/accuracy </label>
+                <label for="entertainment-standard"><input type="checkbox" id="entertainment-standard" name="entertainment-standard" value="entertainment-standard"> The standard of the entertainment provided </label>
+            </fieldset>
+            <fieldset>
+                <label for="comment"><span>Any comments or suggestions?</span>
+                <textarea id="comment" name="comment" rows="8" cols="30" placeholder="Enter your comment here..."></textarea></label>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit" />
+        </form>
+    </body>
+</html>
